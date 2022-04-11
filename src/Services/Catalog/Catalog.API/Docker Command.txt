@@ -1,0 +1,24 @@
+﻿Get Images from hub:
+# docker pull [ImageName]
+
+Run a Image:
+# docker run -d -p [InPort]:[OutPort] --name [ContainerName] [ImageName]
+
+Show Running Container:
+# docker ps
+# docker ps -a
+
+Run Interactive Command window to container:
+# docker exec -it [ContainerName] 
+as sample For Mongo:
+# docker exec -it [MonogContainerName] /bin/bash
+
+Stop a Container:
+# docker stop [Container Start 4 Char ID]
+
+Delete a Container:
+# docker rm [Container Start 4 Char ID]
+
+Show Images:
+# docker images
+

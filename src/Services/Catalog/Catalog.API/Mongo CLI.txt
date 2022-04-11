@@ -1,0 +1,21 @@
+﻿Show All Databases in Mongo:
+# show dbs
+
+Show All Collections In selected DB
+# show collections
+
+Select OR Create a Database:
+# Use [DdName]
+
+Create New Collection (New Table)
+# db.createCollection('[CollectionName]')
+
+Add New Record to Collection:
+# db.[CollectionName].insert({[JsonObject]})
+
+Find
+# db.[CollectionName].find()[.pretty()]
+# db.[CollectionName].find({[JsonObject]})[.pretty()]
+
+Remove All
+# db.[CollectionName].remove({})
