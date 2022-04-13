@@ -3,6 +3,8 @@
 
 Run a Image:
 # docker run -d -p [InPort]:[OutPort] --name [ContainerName] [ImageName]
+-- Mongo 27017
+-- Redis 6379
 
 Show Running Container:
 # docker ps
@@ -12,6 +14,7 @@ Run Interactive Command window to container:
 # docker exec -it [ContainerName] 
 as sample For Mongo:
 # docker exec -it [MonogContainerName] /bin/bash
+# docker exec -it [RedisContainerName] /bin/bash
 
 Stop a Container:
 # docker stop [Container Start 4 Char ID]
@@ -21,4 +24,7 @@ Delete a Container:
 
 Show Images:
 # docker images
+
+Docker-Compose UP or DOWN
+# docker-compose -f .\docker-compose.yml -f .\docker-compose.override.yml up/down -d
 

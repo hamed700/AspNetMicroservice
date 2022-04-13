@@ -1,0 +1,13 @@
+﻿Port: 6379
+
+Open Redis CLI:
+# redis-cli
+
+Check Connection:
+# ping
+
+Set Vey-Value Pair:
+# set [KeyName] [Value]
+
+Get Value of Key:
+# get [KeyName]

@@ -1,4 +1,9 @@
-﻿Show All Databases in Mongo:
+﻿Port: 27017
+
+Open Mongo CLI:
+# mongo
+
+Show All Databases in Mongo:
 # show dbs
 
 Show All Collections In selected DB
