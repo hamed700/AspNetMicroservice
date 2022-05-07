@@ -1,4 +1,6 @@
-﻿using Discount.Grpc.Protos;
+﻿using AutoMapper;
+using Discount.Grpc.Entities;
+using Discount.Grpc.Protos;
 using Discount.Grpc.Repositories.Interfaces;
 using Grpc.Core;
 
@@ -9,12 +11,13 @@ public class DiscountService : DiscountProtoService.DiscountProtoServiceBase
     // DiscountProtoService.DiscountProtoServiceBase => Come From Discount.prot File after Build the program
 
     private readonly IDiscountRepository _repository;
-    //private readonly IMapper _mapper;
+    private readonly IMapper _mapper;
     private readonly ILogger<DiscountService> _logger;
 
-    public DiscountService(IDiscountRepository repository, ILogger<DiscountService> logger)
+    public DiscountService(IDiscountRepository repository, IMapper mapper, ILogger<DiscountService> logger)
     {
         _repository = repository;
+        _mapper = mapper;
         _logger = logger;
     }
 
