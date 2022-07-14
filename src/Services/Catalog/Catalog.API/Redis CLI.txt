@@ -1,12 +1,15 @@
 ﻿Port: 6379
 
+Open Redis Terminal:
+# docker exec -it [ContainerName] sh
+
 Open Redis CLI:
 # redis-cli
 
 Check Connection:
 # ping
 
-Set Vey-Value Pair:
+Set Key-Value Pair:
 # set [KeyName] [Value]
 
 Get Value of Key:

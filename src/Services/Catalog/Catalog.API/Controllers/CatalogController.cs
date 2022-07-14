@@ -35,7 +35,9 @@ namespace Catalog.API.Controllers
             return products;
         }
 
-        [HttpGet("{id:length(24)}", Name = "GetProduct")]
+        [Route("[action]/{id}", Name = "GetProductById")]
+        [HttpGet]
+        //[HttpGet("{id:length(24)}", Name = "GetProductById")]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
         [ProducesResponseType(typeof(Product), (int)HttpStatusCode.OK)]
         public async Task<ActionResult<Product>> GetProductById(string id)
