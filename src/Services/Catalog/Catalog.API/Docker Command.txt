@@ -28,3 +28,6 @@ Show Images:
 Docker-Compose UP or DOWN
 # docker-compose -f .\docker-compose.yml -f .\docker-compose.override.yml up/down -d
 
+Docker-Compose UP And Build Images Again
+# docker-compose -f .\docker-compose.yml -f .\docker-compose.override.yml up/down --build
+
